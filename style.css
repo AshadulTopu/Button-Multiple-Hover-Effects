@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* main section */
+.container{
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.container a{
+    height: 70px;
+    width: 220px;
+    text-decoration: none;
+    border: 2px solid #ff0000;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    line-height: 70px;
+    margin: 10px;
+    position: relative;
+}
+
+.container a span{
+    background: #ff0000;
+    position: absolute;
+    z-index: -1;
+}
+/* Hover section */
+.To-right{
+    height: 70px;
+    width: 0px;
+}
+.container a:hover .To-right{
+    left: 0;
+    top: 0;
+    width: 220px;
+    transition: 0.8s ;
+}
+.container a:hover{
+    color: white;
+    transition: 0.8s;
+}
+
+.To-left{
+    height: 70px;
+    width: 0px;
+}
+.container a:hover .To-left{
+    right: 0;
+    top: 0;
+    width: 220px;
+    transition: 0.8s ;
+}
+
+.To-top{
+    height: 0px;
+    width: 220px;
+    right: 0;
+    bottom: 0;
+
+}
+.container a:hover .To-top{
+    height: 70px;
+    transition: 0.8s;
+}
+.To-bottom{
+    height: 0px;
+    width: 220px;
+    right: 0;
+    top: 0;
+
+}
+.container a:hover .To-bottom{
+    height: 70px;
+    transition: 0.8s;
+}
+
+.To-diagonal-bottom{
+    height: 0px;
+    width: 0px;
+    right: 0;
+    top: 0;
+
+}
+.container a:hover .To-diagonal-bottom{
+    height: 70px;
+    width: 220px;
+    transition: 0.8s;
+}
+.To-diagonal-up{
+    height: 0px;
+    width: 0px;
+    left: 0;
+    bottom: 0;
+
+}
+.container a:hover .To-diagonal-up{
+    height: 70px;
+    width: 220px;
+    transition: 0.8s;
+}
